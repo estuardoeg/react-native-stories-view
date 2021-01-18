@@ -55,6 +55,9 @@ const StoryContainer = (props: StoryContainerProps) => {
     if (props.enableProgress ? props.enableProgress : true && !stopProgress) {
       if (position < props.images.length) {
         setProgressIndex(position)
+        if ( props.onChange ){
+          props.onChange(position)
+        }
       }
     }
   }
