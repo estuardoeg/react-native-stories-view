@@ -48,6 +48,7 @@ class ProgressiveImage extends React.Component {
         <Animated.Image
           {...props}
           source={thumbnailSource}
+          resizeMode={'contain'}
           style={[style, { opacity: this.thumbnailAnimated }]}
           onLoad={this.handleThumbnailLoad}
           // blurRadius={1}
