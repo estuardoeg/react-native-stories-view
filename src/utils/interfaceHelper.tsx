@@ -26,6 +26,7 @@ export interface StoryContainerProps extends CommonProps {
  
     headerComponent?: FunctionComponentElement<CommonProps> | undefined
     userProfile?: UserProps | undefined
+    onChange?: Function,
 
     replyView?: ReplyProps | undefined 
     footerComponent?: FunctionComponentElement<CommonProps> | undefined  
